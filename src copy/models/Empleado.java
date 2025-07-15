@@ -3,7 +3,7 @@ package models;
 public class Empleado implements Comparable<Empleado> {
     @Override
     public int compareTo(Empleado other) {
-        // Primero compara por id, luego por nombre, luego por posición
+        // Primero compara por id, luego por posición
         int cmp = Integer.compare(this.id, other.id);       
         if (cmp != 0) return cmp;
         return this.position.compareTo(other.position);
